@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple JavaScript Page</title>
+</head>
+<body>
+
+    <!-- Place your HTML content here -->
+    <h1>Hello, this is a Simple JavaScript Page!</h1>
+    <button id="greetButton">Click Me</button>
+
+    <script>
+        // JavaScript code starts here
+        // We use the DOM (Document Object Model) to interact with the page elements
+
+        // Function to display a greeting message
+        function displayGreeting() {
+            alert('Hello, Welcome to our page!');
+        }
+
+        // Get the button element using its ID
+        var buttonElement = document.getElementById('greetButton');
+
+        // Attach a click event listener to the button
+        buttonElement.addEventListener('click', displayGreeting);
+    </script>
+
+</body>
+</html>
