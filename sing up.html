@@ -75,5 +75,36 @@
              <a href="login.html"><input type="submit" value="Sign Up"></a>
         </form>
     </div>
+    
+
+    <script>
+        function validateForm() {
+            // Get the values of the name, email, and password fields
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Simple validation for name, email, and password (you can add more complex validation here)
+            if (name.trim() === "") {
+                alert("Please enter your name.");
+                return false;
+            }
+
+            if (email.trim() === "") {
+                alert("Please enter your email.");
+                return false;
+            }
+
+            if (password.trim() === "") {
+                alert("Please enter your password.");
+                return false;
+            }
+
+            // If the validation passes, the form will be submitted
+            return true;
+        }
+    </script>
+
+
 </body>
 </html>
